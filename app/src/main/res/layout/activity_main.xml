@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bgimage"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!-- Create a TextView to show the title. -->
+    <!-- Create an ImageButton for starting the game. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/berkshire_swash"
+            android:gravity="center"
+            android:lineSpacingMultiplier="0.8"
+            android:text="Sara's Journey Math Game"
+            android:textColor="#00FFFF"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:layout_width="99dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/sara2" />
+
+        <ImageButton
+            android:layout_width="141dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/icons8"
+            android:onClick="guidePage" />
+        <!-- Also create a TextView to show the text "Play" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:textSize="40sp"
+            android:textColor="#FFF"
+            android:onClick="guidePage" />
+    </LinearLayout>
+ <!-- Both the ImageButton and the TextView are clickable and once clicked
+    startGame() method in MainActivity will be called. -->
+
+</LinearLayout>
